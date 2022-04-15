@@ -1,21 +1,20 @@
 # `yaml-merge`
 
-![Verify](https://github.com/alexlafroscia/yaml-merge/workflows/Verify/badge.svg)
-
-A super simple tool for merging YAML files.
+A super simple tool for merging YAML files into one file.
+(Forked from [alexlafroscia/yaml-merge](https://github.com/alexlafroscia/yaml-merge) mainly for self usage. The license stays as MIT)
 
 ## Installation
 
 ### For the command line
 
 ```bash
-npm install -g @alexlafroscia/yaml-merge
+npm install -g @cho0o0/yaml-merge
 ```
 
 ### For use through Node
 
 ```bash
-npm install --save @alexlafroscia/yaml-merge
+npm install --save @cho0o0/yaml-merge
 ```
 
 ## Usage
@@ -24,20 +23,10 @@ npm install --save @alexlafroscia/yaml-merge
 
 ### Command Line
 
-When using this tool from the command line, the output file will simply be written to `STDOUT`
+When using this tool from the command line, the output file will simply be written to the first arg.
 
 ```bash
-yaml-merge test/fixtures/basic/a.yml test/fixtures/basic/b.yml
-a:
-  foo: bar
-b:
-  foo: bar
-```
-
-This way, you can pipe the output to whatever you want. For example, this will write the new `yaml` file to `output.yml`
-
-```bash
-yaml-merge test/fixtures/basic/a.yml test/fixtures/basic/b.yml > output.yml
+yaml-merge output.yml test/fixtures/basic/a.yml test/fixtures/basic/b.yml
 ```
 
 The provided file names will be resolved relative to the current directory. So, you an provide a relative path to the files, or an absolute path -- either method works just fine.

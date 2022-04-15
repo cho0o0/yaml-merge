@@ -1,7 +1,7 @@
 {
-  "name": "@alexlafroscia/yaml-merge",
+  "name": "@cho0o0/yaml-merge",
   "version": "4.1.0",
-  "description": "A super simple tool for merging YAML files",
+  "description": "A super simple tool for merging YAML files into one file",
   "main": "index.js",
   "bin": "bin/yaml-merge",
   "license": "MIT",
